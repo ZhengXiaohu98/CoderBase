@@ -21,5 +21,5 @@ require('./config/passport')(passport)
 const usersRouter = require("./routes/users")
 app.use("/users", usersRouter)
 
-
-app.listen(5007, () => console.log("Server start listening on port 5007"))
+const PORT = process.env.PORT || 5007;
+app.listen(PORT, () => console.log("Server start listening on port " + PORT))
