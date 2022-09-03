@@ -5,7 +5,7 @@ const cors = require("cors")
 app.use(cors())
 
 const { createProxyMiddleware } = require('http-proxy-middleware');
-app.use('/', createProxyMiddleware({
+app.use('/api/getlcinfo', createProxyMiddleware({
     // target url
     target: 'https://leetcode.com/graphql',
     changeOrigin: true,

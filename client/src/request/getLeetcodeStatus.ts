@@ -56,7 +56,7 @@ const query = `
   }`;
 
 function getLeetcodeStatus(username: string) {
-  const PROXY_URL = 'http://localhost:3000';
+  const PROXY_URL = 'http://localhost:3000/api/getlcinfo';
   return fetch(PROXY_URL, {
     method: 'POST',
     headers: {
