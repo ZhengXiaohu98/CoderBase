@@ -10,7 +10,8 @@
     "proxy": "npm run proxyStart --prefix proxy",
     "serverStart": "nodemon server.js",
     "proxyStart": "nodemon ./proxy/server.js",
-    "dev": "concurrently \"npm run client-install\" \"npm run proxy-install\" \"npm run proxyStart\" \"npm run serverStart\" \"npm run client\""
+    "start": "concurrently \"npm run proxyStart\" \"npm run serverStart\" \"npm run client\"",
+    "dev": "concurrently \"npm run proxyStart\" \"npm run serverStart\" \"npm run client\""
   },
   "author": "",
   "license": "ISC",

@@ -19,7 +19,7 @@ require('./config/passport')(passport)
 
 // Add User router
 const usersRouter = require("./routes/users")
-app.use("/users", usersRouter)
+app.use("/api/users", usersRouter)
 
 const PORT = process.env.PORT || 5007;
 app.listen(PORT, () => console.log("Server start listening on port " + PORT))

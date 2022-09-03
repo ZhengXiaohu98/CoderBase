@@ -11,7 +11,7 @@ function startLoading() {
 }
 
 const userService = axios.create({
-  baseURL: "http://localhost:5007/users",
+  baseURL: "http://localhost:5007/api/users",
   timeout: 5000,
   headers: {
     "Content-Type": "application/json;charset=utf-8"
